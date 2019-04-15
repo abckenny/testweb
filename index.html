@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a test website</title>
+    <style>
+        * {
+            /* 기본적으로 box의 사이즈는 content를 기준으로 정한다.
+            그런데 border를 기준으로 정하는게 더 직관적이어서 모든 요소에 이렇게 적용한다. */
+            box-sizing: border-box;
+        }
+        body {
+            /* font와 color관련 속성은 상속되는 속성이다. */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        /* Create two columns/boxed that floats next to each other. */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: #ccc;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        section {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        헤더 내용
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">리스트 요소 1</a></li>
+            <li><a href="#">리스트 요소 2</a></li>
+            <li><a href="#">리스트 요소 3</a></li>
+            <li><a href="#">리스트 요소 4</a></li>
+            <li><a href="#">리스트 요소 5</a></li>
+        </ul>
+    </nav>
+    <section>
+        컨텐츠 내용
+    </section>
+    <footer>
+        푸터 내용
+    </footer>
+</body>
+</html>
